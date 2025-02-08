@@ -1,4 +1,4 @@
-# Hme Upkeep (Ionic)
+# Home Upkeep (Ionic)
 
 - Go to your new project: cd ./home-upkeep-ionic
 - Run ionic serve within the app directory to see your app in the browser
