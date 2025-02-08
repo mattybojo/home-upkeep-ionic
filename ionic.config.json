@@ -1,0 +1,7 @@
+{
+  "name": "home-upkeep-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
