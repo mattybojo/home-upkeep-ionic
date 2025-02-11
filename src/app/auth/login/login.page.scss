@@ -6,42 +6,12 @@ ion-content {
   background-size: cover;
 }
 
-.login-form-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.app-title {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.text-color {
-  color: #fff;
-}
-
-.hr {
-  width: 100%;
-  color: #fff;
-  background-color: #fff;
-}
-
-.login-text {
-  font-size: small;
-}
-
 .login-form {
-  display: flex;
-  flex-direction: column;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 1rem;
 }
 
 .gsi-material-button {

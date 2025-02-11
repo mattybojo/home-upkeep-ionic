@@ -1,9 +1,11 @@
 <ion-content [fullscreen]="true">
-  <div class="login-form-container">
-    <div class="login-form ion-justify-content-center ion-align-items-center">
-      <h3 class="app-title text-color">Home Upkeep</h3>
-      <hr class="hr" />
-      <p class="text-color login-text">Login using one of the below</p>
+  <div class="flex items-center justify-center h-full">
+    <div
+      class="login-form flex flex-col items-center justify-center rounded-2xl p-4"
+    >
+      <p class="my-0 text-white text-lg mb-1">Home Upkeep</p>
+      <hr class="w-full text-white bg-white mb-3" />
+      <p class="text-white text-xs mb-1">Login using one of the below</p>
       <!-- Login with Google button -->
       <button class="gsi-material-button" (click)="signIn()">
         <div class="gsi-material-button-state"></div>
