@@ -17,7 +17,6 @@ export class AuthService {
 
   initAuthListener() {
     authState(this.auth).subscribe(user => {
-      console.log(user);
       if (user) {
         this.authStore.setIsLoggedIn(true, user);
       } else {
