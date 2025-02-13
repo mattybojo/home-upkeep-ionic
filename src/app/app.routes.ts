@@ -1,18 +1,10 @@
-import { canActivate } from '@angular/fire/auth-guard';
 import { Routes } from '@angular/router';
-import { redirectUnauthorizedToLogin } from './auth/auth.helpers';
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/inbox',
+    redirectTo: 'tasks',
     pathMatch: 'full',
-  },
-  {
-    path: 'folder/:id',
-    loadComponent: () =>
-      import('./folder/folder.page').then((m) => m.FolderPage),
-    ...canActivate(redirectUnauthorizedToLogin)
   },
   {
     path: 'auth',
