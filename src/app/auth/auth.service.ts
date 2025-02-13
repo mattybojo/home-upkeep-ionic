@@ -1,14 +1,16 @@
-import { inject, Injectable } from '@angular/core';
+import { effect, inject, Injectable, untracked } from '@angular/core';
 import { Auth, authState, GoogleAuthProvider, signInWithPopup } from '@angular/fire/auth';
 import { Router } from '@angular/router';
 import { from, Observable } from 'rxjs';
 import { AuthStore } from './auth.store';
+import { or, QueryCompositeFilterConstraint, QueryFieldFilterConstraint, where } from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
+  // DI
   private auth = inject(Auth);
   readonly authStore = inject(AuthStore);
   private router = inject(Router);
@@ -38,4 +40,3 @@ export class AuthService {
     return from(this.auth.signOut().then(() => this.router.navigate(['/auth/login'])));
   }
 }
-

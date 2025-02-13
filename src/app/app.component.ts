@@ -1,5 +1,6 @@
 
 import { Component, inject } from '@angular/core';
+import { LogLevel, setLogLevel } from "@angular/fire";
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
@@ -35,6 +36,7 @@ export class AppComponent {
   readonly authStore = inject(AuthStore);
 
   constructor() {
+    setLogLevel(LogLevel.VERBOSE);
     this.authService.initAuthListener();
     addIcons({ mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp, personCircleOutline, logOutOutline });
   }
